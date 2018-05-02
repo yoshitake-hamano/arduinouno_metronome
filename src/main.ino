@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 
-int                 BEEP_PIN         = 11;
+int                 BEEP_PIN         = 9;
 const unsigned long BEEP_DURATION_MS = 50;
 /**
  * 262 C
@@ -14,14 +14,14 @@ const unsigned long BEEP_DURATION_MS = 50;
  */
 const unsigned int   BEEP_FREQUENCY   = 1396;
 
-const int NEO_PIXEL_PIN     = 12;
+const int NEO_PIXEL_PIN     = 6;
 const int NUM_OF_NEO_PIXELS = 1;
 const int NEO_PIXEL_STOCK_0 = 0;
 Adafruit_NeoPixel pixels    = Adafruit_NeoPixel(NUM_OF_NEO_PIXELS,
                                                 NEO_PIXEL_PIN,
                                                 NEO_GRB + NEO_KHZ800);
 
-const int BUTTON_PIN        = 13;
+const int BUTTON_PIN        = 7;
 const int DETECTED_BUTTON_DELAY_MS = 300;
 
 const int MINIMUM_DELAY_MS  = 100;
